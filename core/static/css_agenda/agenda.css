@@ -1,0 +1,78 @@
+/* Estilize o título da página */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilize o botão "Novo Evento" */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilize a lista de eventos */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Estilize os links "Editar" e "Excluir" */
+a.edit-link {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+a.delete-link {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+a.edit-link:hover, a.delete-link:hover {
+    opacity: 0.8;
+}
+
+/* Estilize a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilize os cabeçalhos da tabela */
+th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,22 @@
+{% extends 'model page.html' %}
+{%load static %}
+{% block content %}
+    
+
+    <h2>Agendamentos</h2>
+    <a href="evento/">
+    <button type= "button" >Novo Evento</button>
+    </a>
+    
+    
+    {% for evento in eventos %}
+
+       <li><td>{{evento.titulo}}</td>
+        <td>{{evento.descricao}}</td>
+        <td>{{evento.get_data_evento}}</td>
+         <a href="evento/?id={{ evento.id }}">Editar</a>
+            <a href="evento/delete/{{evento.id }}/">Excluir</a> 
+        </li> 
+    {% endfor %} 
+    </ul>
+{% endblock %}
